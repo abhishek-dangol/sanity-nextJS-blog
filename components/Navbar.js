@@ -1,10 +1,13 @@
 import { Navbar, Nav } from "react-bootstrap";
+import Link from "next/link";
 
 const BlogNavbar = () => {
   return (
     <Navbar className="fj-navbar fj-nav-base" bg="transparent" expand="lg">
       <Navbar.Brand className="fj-navbar-brand">
-        <a href="#">Abhishek Dangol</a>
+        <Link href="/">
+          <a>Abhishek Dangol</a>
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
+import Link from "next/link";
 
-const CardItem = ({ title, subtitle, image, date, author }) => {
+const CardItem = ({ title, subtitle, image, date, author, link }) => {
   return (
     <Card className={`fj-card`}>
       <div className="card-body-wrapper">
         <Card.Header className="d-flex flex-row">
           <img
-            src={author.avatar}
+            src={author?.avatar || "https://via.placeholder.com/150"}
             className="rounded-circle mr-3"
             height="50px"
             width="50px"
@@ -14,7 +15,7 @@ const CardItem = ({ title, subtitle, image, date, author }) => {
           />
           <div>
             <Card.Title className="font-weight-bold mb-1">
-              {author.name}
+              {author?.name}
             </Card.Title>
             <Card.Text className="card-date">{date}</Card.Text>
           </div>
@@ -27,7 +28,11 @@ const CardItem = ({ title, subtitle, image, date, author }) => {
           <Card.Text>{subtitle}</Card.Text>
         </Card.Body>
       </div>
-      <a className="card-button">Read More</a>
+      {link && (
+        <Link {...link}>
+          <a className="card-button">Read More</a>
+        </Link>
+      )}
     </Card>
   );
 };
