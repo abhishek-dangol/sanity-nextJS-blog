@@ -12,9 +12,13 @@ const BlogNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link className="fj-navbar-item fj-navbar-link" href="/">
-            Home
-          </Nav.Link>
+          <Nav.Link
+            as={() => (
+              <Link href="/">
+                <a className="fj-navbar-item fj-navbar-link">Home</a>
+              </Link>
+            )}
+          />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
