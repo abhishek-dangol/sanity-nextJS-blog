@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
 import Link from "next/link";
+import moment from "moment";
 
 const CardListItem = ({
   title,
@@ -13,13 +14,6 @@ const CardListItem = ({
     <Card className={`fj-card fj-card-list ${mode}`}>
       <div className="card-body-wrapper">
         <Card.Header className="d-flex flex-row">
-          <img
-            src={author?.avatar || "https://via.placeholder.com/150"}
-            className="rounded-circle mr-3"
-            height="50px"
-            width="50px"
-            alt="avatar"
-          />
           {mode === "placeholder" ? (
             <div>
               <Card.Title className="font-weight-bold mb-1">
@@ -29,10 +23,9 @@ const CardListItem = ({
             </div>
           ) : (
             <div>
-              <Card.Title className="font-weight-bold mb-1">
-                {author?.name}
-              </Card.Title>
-              <Card.Text className="card-date">{date}</Card.Text>
+              <Card.Text className="card-date">
+                {moment(date).format("LLL")}
+              </Card.Text>
             </div>
           )}
         </Card.Header>

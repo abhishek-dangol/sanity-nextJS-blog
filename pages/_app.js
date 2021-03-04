@@ -5,17 +5,32 @@ import "styles/index.scss";
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import {
+  faSun,
+  faMoon,
   faBorderAll,
   faList,
   faSortNumericDown,
   faSortNumericUp,
 } from "@fortawesome/free-solid-svg-icons";
+import ThemeProvider from "providers/ThemeProvider";
+import "react-toggle/style.css";
 
 config.autoAddCss = false;
-library.add(faList, faBorderAll, faSortNumericUp, faSortNumericDown);
+library.add(
+  faList,
+  faBorderAll,
+  faSortNumericUp,
+  faSortNumericDown,
+  faSun,
+  faMoon
+);
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider>
+      <Component {...pageProps} />;
+    </ThemeProvider>
+  );
 }
 
 export default MyApp;
