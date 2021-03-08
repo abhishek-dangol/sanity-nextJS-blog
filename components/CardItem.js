@@ -27,7 +27,7 @@ const CardItem = ({
             ) : (
               <>
                 <Card.Title className="card-main-title font-weight-bold">
-                  {title}
+                  {title.length > 60 ? title.substr(0, 60) + "..." : title}
                 </Card.Title>
                 <Card.Text className="card-date">
                   {moment(date).format("LLL")}
@@ -55,7 +55,12 @@ const CardItem = ({
             </>
           ) : (
             <>
-              <Card.Text>{subtitle}</Card.Text>
+              <Card.Text>
+                {" "}
+                {subtitle.length > 100
+                  ? subtitle.substr(0, 100) + "..."
+                  : subtitle}
+              </Card.Text>
             </>
           )}
         </Card.Body>
