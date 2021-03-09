@@ -1,5 +1,6 @@
 import { Row, Col, Media, Image } from "react-bootstrap";
 
+/// Intro here
 const AuthorIntro = () => (
   <Row>
     <Col md="8">
