@@ -1,5 +1,6 @@
 import { previewClient } from "../../lib/sanity";
 
+///Main function here
 export default async function createComment(req, res) {
   const { _id, name, email, comment } = JSON.parse(req.body);
   try {
