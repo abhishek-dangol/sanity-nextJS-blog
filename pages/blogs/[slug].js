@@ -6,9 +6,10 @@ import { Row, Col } from "react-bootstrap";
 import { urlFor } from "lib/api";
 import moment from "moment";
 import { useRouter } from "next/router";
-
 import BlogContent from "components/BlogContent";
 import PreviewAlert from "components/PreviewAlert";
+import Comments from "components/comments";
+import Form from "components/form";
 
 const BlogDetail = ({ blog, preview }) => {
   const router = useRouter();
@@ -37,6 +38,8 @@ const BlogDetail = ({ blog, preview }) => {
           {blog.content && <BlogContent content={blog.content} />}
         </Col>
       </Row>
+      <Comments comments={blog?.comments} />
+      <Form _id={blog._id} />
     </PageLayout>
   );
 };
