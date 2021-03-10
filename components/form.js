@@ -29,12 +29,15 @@ export default function Form({ _id }) {
   if (hasSubmitted) {
     return (
       <>
-        <h3>Thanks for your comment!</h3>
+        <h3>
+          Thanks for your comment! It will be published once it has been
+          moderated and approved.
+        </h3>
         <ul>
           <li>
-            Name: {formData.name} <br />
-            Email: {formData.email} <br />
-            Comment: {formData.comment}
+            Your Name: {formData.name} <br />
+            Your Email: {formData.email} <br />
+            Your Comment: {formData.comment}
           </li>
         </ul>
       </>
@@ -58,11 +61,11 @@ export default function Form({ _id }) {
         />
       </label>
       <label className="block mb-5">
-        <span className="text-gray-700">Email</span>
+        <span className="text-gray-700">Email (Optional)</span>
         <input
           name="email"
           type="email"
-          ref={register({ required: true })}
+          ref={register({ required: false })}
           className="form-input mt-1 block w-full"
           placeholder="your@email.com"
         />
@@ -74,7 +77,7 @@ export default function Form({ _id }) {
           name="comment"
           className="form-textarea mt-1 block w-full"
           rows="8"
-          placeholder="Enter some long form content."
+          placeholder="Enter your comment here"
         ></textarea>
       </label>
       {/* errors will return when field validation fails  */}

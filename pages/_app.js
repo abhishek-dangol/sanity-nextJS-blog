@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ThemeProvider from "providers/ThemeProvider";
 import "react-toggle/style.css";
+import "../styles/globals.css";
 
 config.autoAddCss = false;
 library.add(
