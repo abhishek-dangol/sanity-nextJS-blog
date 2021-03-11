@@ -52,7 +52,6 @@ export async function getStaticProps({ params, preview = false, previewData }) {
   };
 }
 
-// TODO: Introduce fallback
 export async function getStaticPaths() {
   const blogs = await getAllBlogs();
   const paths = blogs?.map((b) => ({ params: { slug: b.slug } }));

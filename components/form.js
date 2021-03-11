@@ -33,7 +33,7 @@ export default function Form({ _id }) {
           Thanks for your comment! It will be published once it has been
           moderated and approved.
         </h3>
-        <ul>
+        <ul className="w-full max-w-lg mb-4 border border-gray-600 shadow-md rounded-xl p-1">
           <li>
             Your Name: {formData.name} <br />
             Your Email: {formData.email} <br />
@@ -47,7 +47,7 @@ export default function Form({ _id }) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-lg"
+      className="w-full font-serif max-w-lg mb-4 mt-10 border border-gray-600 shadow-md rounded-xl p-1"
       disabled
     >
       <input ref={register} type="hidden" name="_id" value={_id} />
@@ -84,7 +84,7 @@ export default function Form({ _id }) {
       {errors.exampleRequired && <span>This field is required</span>}
       <input
         type="submit"
-        className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+        className=" ml-40 shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
       />
     </form>
   );

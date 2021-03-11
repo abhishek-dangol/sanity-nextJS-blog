@@ -12,6 +12,10 @@ export default function PageLayout({ children, className }) {
           href="https://fonts.googleapis.com/css2?family=Laila:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Container>
         <Navbar theme={theme} toggleTheme={toggleTheme} />

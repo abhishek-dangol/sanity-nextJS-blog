@@ -12,7 +12,9 @@ const BlogNavbar = ({ theme, toggleTheme }) => {
     >
       <Navbar.Brand className="fj-navbar-brand">
         <Link href="/">
-          <a style={{ color: theme.fontColor }}>Abhishek's Blogs</a>
+          <a className="home-title-font" style={{ color: theme.fontColor }}>
+            Abhishek Dangol's Blogs
+          </a>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,8 +24,8 @@ const BlogNavbar = ({ theme, toggleTheme }) => {
           <ThemeToggle onChange={toggleTheme} />
           <Nav.Link
             as={() => (
-              <Link href="/">
-                <a className="fj-navbar-item fj-navbar-link">Home</a>
+              <Link href="/about">
+                <a className="fj-navbar-item fj-navbar-link">About</a>
               </Link>
             )}
           />
