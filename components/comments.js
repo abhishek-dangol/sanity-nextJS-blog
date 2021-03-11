@@ -12,8 +12,8 @@ export default function Comments({ comments = [] }) {
             key={_id}
             className="mb-4 mr-44 border border-gray-600 shadow-md rounded-xl p-1"
           >
-            <p className="font-bold text-xl mt-4">{comment}</p>
-            <h4 className="mb-2 leading-tight text-base">
+            <p className="font-bold text-xl mt-2">{comment}</p>
+            <h4 className="mb-2 mt-2 leading-tight text-base">
               {name} (
               <Date dateString={_createdAt} />)
             </h4>
