@@ -20,7 +20,7 @@ const CardItem = ({
             {mode === "placeholder" ? (
               <>
                 <Card.Title className="font-weight-bold mb-1">
-                  Placeholder Title
+                  Placeholder title
                 </Card.Title>
                 <Card.Text className="card-date">Placeholder Date</Card.Text>
               </>
