@@ -3,6 +3,7 @@ import Link from "next/link";
 import ThemeToggle from "components/ThemeToggle";
 import NProgress from "nprogress";
 import Router from "next/router";
+import { motion } from "framer-motion";
 
 Router.onRouteChangeStart = (url) => NProgress.start();
 Router.onRouteChangeComplete = (url) => NProgress.done();
@@ -18,9 +19,27 @@ const BlogNavbar = ({ theme, toggleTheme }) => {
     >
       <Navbar.Brand className="fj-navbar-brand">
         <Link href="/">
-          <a className="home-title-font" style={{ color: theme.fontColor }}>
-            Abhishek Dangol's Blogs
-          </a>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 0.4,
+                },
+              },
+            }}
+          >
+            <a className="home-title-font" style={{ color: theme.fontColor }}>
+              Abhishek Dangol's Blogs
+            </a>
+          </motion.div>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
