@@ -8,10 +8,8 @@ export default function PageLayout({ children, className }) {
   return (
     <div className={theme.type}>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Laila:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        </link>
         <link
           href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
           rel="stylesheet"
