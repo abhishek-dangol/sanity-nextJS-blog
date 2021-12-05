@@ -1,6 +1,10 @@
+import { faCarSide } from "@fortawesome/free-solid-svg-icons";
 import BlockContent from "@sanity/block-content-to-react";
 import HighlightCode from "components/HighlightCode";
+import getYouTubeID from "get-youtube-id";
 import { urlFor } from "lib/api";
+import { Figure } from "react-bootstrap";
+import YouTube from 'react-youtube'
 
 const serializers = {
   types: {
@@ -20,6 +24,13 @@ const serializers = {
         </div>
       );
     },
+    authorReference: ({ node }) => <span>{node.author.name}</span>,
+    mainImage: Figure,
+    youtube: ({ node }) => {
+      const { url } = node
+      const id = getYouTubeID(url)
+      return (<YouTube videoId={id}/>)
+    }
   },
 };
 
