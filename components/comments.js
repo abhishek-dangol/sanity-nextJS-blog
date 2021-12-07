@@ -7,7 +7,7 @@ export default function Comments({ comments = [] }) {
         Comments:
       </h2>
 
-      <ul className="font-serif ">
+      <ul className="font-serif">
         {comments?.map(({ _id, _createdAt, name, email, comment }) => (
           <li
             key={_id}
@@ -15,8 +15,8 @@ export default function Comments({ comments = [] }) {
           >
             <p className="font-bold text-xl mt-2">{comment}</p>
             <h4 className="mb-2 mt-2 leading-tight text-base">
-              {name} (
-              <Date dateString={_createdAt} />)
+              {name} - {' '}
+              <Date dateString={_createdAt} />
             </h4>
           </li>
         ))}
