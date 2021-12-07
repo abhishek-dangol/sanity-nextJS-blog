@@ -10,7 +10,7 @@ export default function About() {
 
       <main className="mx-auto">
         <h1>About this blog</h1>
-        <p>
+        <h3>
           Hello visitor! Thank you for taking the time and interest to read this.
           This is my blog and let me tell you this is not your ordinary, run-of-the-mill blog.
           Most blogs are built using third-party platforms such as Wordpress or Medium etc.
@@ -27,7 +27,7 @@ export default function About() {
           file-based routing etc. On the other hand, Sanity.io makes managing content as easy
           as playing against Manchester United in the English Premier League (can you guess which
           team I support? I will give you a hint: 6).
-        </p>
+        </h3>
       </main>
     </PageLayout>
   );
