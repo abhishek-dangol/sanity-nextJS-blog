@@ -11,40 +11,22 @@ export default function About() {
       <main className="mx-auto">
         <h1>About this blog</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          maximus erat ac nisi cursus, nec euismod diam tristique. Fusce eros
-          mi, pulvinar et hendrerit vitae, sollicitudin eu ligula. Mauris
-          pretium, est vitae aliquet ultrices, tellus risus posuere massa, non
-          venenatis arcu augue malesuada nisl. Nulla bibendum eget quam non
-          convallis. Sed sodales massa a sapien euismod scelerisque.
-          Pellentesque tempor lacinia faucibus. Suspendisse eu molestie felis.
-          Aenean porta eros ac urna feugiat, a viverra tortor semper. Fusce
-          porttitor suscipit nunc in viverra. Mauris id pretium erat. Phasellus
-          tincidunt ligula quis ultrices feugiat. Sed lobortis convallis eros.
-          Maecenas efficitur lacinia nibh sed volutpat. Integer convallis
-          facilisis lacinia. Sed nec varius mauris. Donec magna lorem, hendrerit
-          id tempor tempor, pretium ut tortor. Pellentesque metus ligula,
-          efficitur ac pulvinar nec, ultricies vitae erat. Curabitur fringilla
-          ut purus quis bibendum. Nullam non mauris sem. Ut ex dolor, luctus
-          convallis diam quis, vestibulum dignissim arcu. In mattis vitae urna a
-          volutpat. Cras at laoreet quam. Fusce tempus finibus egestas. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus a ipsum a urna euismod lacinia rutrum vel
-          metus. Nunc sit amet dapibus ipsum. Nullam facilisis, ligula sit amet
-          tristique hendrerit, urna turpis pellentesque nibh, quis feugiat
-          sapien sapien eget est. Donec dapibus venenatis dignissim. In cursus
-          leo eget vestibulum cursus. Nam viverra risus ac enim eleifend
-          aliquet. Sed tempus erat quis lacus auctor accumsan. Phasellus purus
-          erat, auctor ut risus a, consequat dapibus leo. Nam sollicitudin vitae
-          neque eu tincidunt. Proin accumsan malesuada velit eu hendrerit.
-          Maecenas et odio imperdiet, rhoncus eros eget, porttitor nunc. Ut
-          placerat urna vitae leo interdum, et viverra mi euismod. Pellentesque
-          molestie feugiat velit et viverra. Phasellus ultrices a libero et
-          feugiat. Sed pharetra ultricies sapien ut ullamcorper. Ut ultrices,
-          metus et lacinia tristique, mi quam aliquam massa, ac facilisis velit
-          tellus a felis. Vestibulum eros ante, fermentum at dapibus sed,
-          maximus ut elit. Fusce at felis scelerisque, interdum odio eu, varius
-          nisi.
+          Hello visitor! Thank you for taking the time and interest to read this.
+          This is my blog and let me tell you this is not your ordinary, run-of-the-mill blog.
+          Most blogs are built using third-party platforms such as Wordpress or Medium etc.
+          But, those things are for people who are afraid of the dreaded C-word! As a computer programmer
+          who hates paying for stuff that ought to be free (and yes, I know
+          there are some free options out there but they suck TBH), I thought why not build
+          something from scratch using the latest and the greatest technology that everyone is
+          raving about these days. I did some research, a lot of research actually, and decided
+          to go with Next JS, a React framework (that's right - a
+          framework on top of a framework) as my frontend tool of choice and an equally
+          cool headless Content Management System, or CMS for short, called Sanity.io for
+          my backend. Next JS has a lot of cool features that vanilla React does
+          not such as server-side rendering (which leads to better SEO) as well as my favorite:
+          file-based routing etc. On the other hand, Sanity.io makes managing content as easy
+          as playing against Manchester United in the English Premier League (can you guess which
+          team I support? I will give you a hint: 6).
         </p>
       </main>
     </PageLayout>
