@@ -10,6 +10,7 @@ import BlogContent from "components/BlogContent";
 import PreviewAlert from "components/PreviewAlert";
 import Comments from "components/comments";
 import Form from "components/form";
+import { LikeButton, ClapButton } from "@lyket/react";
 
 const BlogDetail = ({ blog, preview }) => {
   const router = useRouter();
@@ -36,10 +37,19 @@ const BlogDetail = ({ blog, preview }) => {
           />
           <hr />
           {blog.content && <BlogContent content={blog.content} />}
+          <hr />
+          <LikeButton
+            id="vanillaLikeBtn"
+            component={LikeButton.templates.Twitter}
+          />{" "}
+          <ClapButton
+            id="vanillaClapBtn"
+            component={ClapButton.templates.Heart}
+          />
+          <Comments comments={blog?.comments} />
+          <Form _id={blog._id} />
         </Col>
       </Row>
-      <Comments comments={blog?.comments} />
-      <Form _id={blog._id} />
     </PageLayout>
   );
 };
