@@ -8,7 +8,10 @@ export default function PageLayout({ children, className }) {
   return (
     <div className={theme.type}>
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+          rel="stylesheet"
+        ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
           rel="stylesheet"
@@ -19,11 +22,29 @@ export default function PageLayout({ children, className }) {
         <div className={`page-wrapper ${className}`}>{children}</div>
         <footer className="page-footer">
           <div>
-            <a href="#">courses</a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/jainepaljaiktm/"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
             {" | "}
-            <a href="#">github</a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/abhishek_dangol/"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
             {" | "}
-            <a href="#">facebook</a>
+            <a
+              target="_blank"
+              href="https://twitter.com/abhishek_dangol"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
           </div>
         </footer>
       </Container>

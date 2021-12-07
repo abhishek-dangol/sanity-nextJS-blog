@@ -3,9 +3,11 @@ import Date from "./date";
 export default function Comments({ comments = [] }) {
   return (
     <>
-      <h2 className="home-title-font mt-10 mb-4 text-4xl lg:text-4xl leading-tight">
-        Comments:
-      </h2>
+      <div class="text-4xl font-extrabold ... mb-6">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+          Comments:
+        </span>
+      </div>
 
       <ul className="font-serif">
         {comments?.map(({ _id, _createdAt, name, email, comment }) => (
@@ -15,15 +17,16 @@ export default function Comments({ comments = [] }) {
           >
             <p className="font-bold text-xl mt-2">{comment}</p>
             <h4 className="mb-2 mt-2 leading-tight text-base">
-              {name} - {' '}
-              <Date dateString={_createdAt} />
+              {name} - <Date dateString={_createdAt} />
             </h4>
           </li>
         ))}
       </ul>
-      <h2 className="home-title-font mt-12 text-4xl lg:text-4xl leading-tight">
-        Add your comment:
-      </h2>
+      <div class="text-4xl font-extrabold ... mt-8 ">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 mb-5">
+          Add Your Comment:
+        </span>
+      </div>
     </>
   );
 }
