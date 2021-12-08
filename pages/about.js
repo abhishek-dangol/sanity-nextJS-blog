@@ -8,8 +8,7 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <main className="mx-auto">
-        <div class="text-5xl font-extrabold ...">
+        <div class="text-3xl font-extrabold ...">
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
             About This Blog
           </span>
@@ -36,10 +35,8 @@ export default function About() {
           English Premier League. I hope to post at least one new blog every week
           on topics ranging from books to music, history, self-help, and just
           life in general.
-          
-          
-        </h4>
-      </main>
+          </h4>
+  
     </PageLayout>
   );
 }

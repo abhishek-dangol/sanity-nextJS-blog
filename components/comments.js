@@ -3,7 +3,7 @@ import Date from "./date";
 export default function Comments({ comments = [] }) {
   return (
     <>
-      <div class="text-4xl font-extrabold ... mb-6">
+      <div class="text-3xl font-extrabold ... mb-6">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
           Comments:
         </span>
@@ -22,7 +22,7 @@ export default function Comments({ comments = [] }) {
           </li>
         ))}
       </ul>
-      <div class="text-4xl font-extrabold ... ">
+      <div class="text-3xl font-extrabold ... ">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 mb-5">
           Add a comment:
         </span>
