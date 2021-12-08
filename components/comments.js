@@ -22,9 +22,9 @@ export default function Comments({ comments = [] }) {
           </li>
         ))}
       </ul>
-      <div class="text-4xl font-extrabold ... mt-8 ">
+      <div class="text-4xl font-extrabold ... ">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 mb-5">
-          Add Your Comment:
+          Add a comment:
         </span>
       </div>
     </>
