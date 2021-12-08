@@ -11,7 +11,7 @@ body {
 .home-title-font {
   font-family: "Redressed", cursive;
   text-transform: lowercase;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 
 .clickable:hover {
@@ -249,6 +249,8 @@ body {
     float: left;
     margin-right: 30px;
     max-width: 50%;
+    display: inline;
+    
   }
 
   &-right {
@@ -305,7 +307,7 @@ body {
 
     .fj-navbar {
       &-brand {
-        // color: #ffffff;
+        color: #ffffff;
       }
 
       &-link {
