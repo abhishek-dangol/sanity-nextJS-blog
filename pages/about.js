@@ -8,7 +8,7 @@ export default function About() {
         <title>About</title>
       </Head>
 
-        <div class="text-3xl font-extrabold ...">
+        <div class="text-4xl font-extrabold ...">
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
             About This Blog
           </span>
